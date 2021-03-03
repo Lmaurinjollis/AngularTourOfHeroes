@@ -1,18 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms'; //Must be included for the hero's form
 
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
+import { HeroesComponent } from './heroes/heroes.component'; //Imported by the CLI's command when generating the component
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent
+    HeroesComponent //Declared automatically by the CLI's command when generating the component
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule //And should be declared in the import to use it
   ],
   providers: [],
   bootstrap: [AppComponent]

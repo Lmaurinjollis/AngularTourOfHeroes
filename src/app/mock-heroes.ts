@@ -1,5 +1,6 @@
 import { Hero } from './hero';
 
+//Define a list of Hero interface
 export const HEROES: Hero[] = [
   { id: 1, name: 'Windstorm' },
   { id: 11, name: 'Dr Nice' },
