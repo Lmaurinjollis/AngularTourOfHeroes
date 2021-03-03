@@ -4,13 +4,15 @@ import { FormsModule } from '@angular/forms'; //Must be included for the hero's 
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component'; //Imported by the CLI's command when generating the component
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component'; //Imported by the CLI's command when generating the component
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent //Declared automatically by the CLI's command when generating the component
+    HeroDetailComponent,
+    MessagesComponent //Declared automatically by the CLI's command when generating the component
   ],
   imports: [
     BrowserModule,
