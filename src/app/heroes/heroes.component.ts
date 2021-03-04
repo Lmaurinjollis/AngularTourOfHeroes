@@ -14,7 +14,7 @@ export class HeroesComponent implements OnInit {
   heroes: Hero[] = []; //This property will be filled by the service
 
   //Initialize the services when the component is constructed
-  constructor(private heroService: HeroService, private messageService: MessageService) {}
+  constructor(private heroService: HeroService) {}
 
   ngOnInit() {
     this.getHeroes(); //Fill the heroes property when the component is intialized
