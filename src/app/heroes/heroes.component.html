@@ -2,13 +2,10 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
   <!--loop on the mock-heroes and display each hero-->
-  <li *ngFor="let hero of heroes"
-  [class.selected]="hero === selectedHero"
-  (click)="onSelect(hero)">
+  <li *ngFor="let hero of heroes">
+  <a routerLink="/detail/{{hero.id}}">
     <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </a>
   </li>
 </ul>
-
-<!--Displayed when a hero from the list above is selcted-->
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
 
